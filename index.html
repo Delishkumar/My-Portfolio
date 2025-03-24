@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - MERN Stack Developer</title>
+    <title>Delish-Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,108 +19,127 @@
         <nav>
             <h1>Delish kumar</h1>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+            <div class="menu"> <i class="fa-solid fa-bars" id="menubutn" style="font-size: 17px;"></i></div>
         </nav>
+        <div class="slidelists">
+            <ul class="slidelist">
+                <p id="cut" style="cursor: pointer;">X</p>
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
     </header>
+
     <section class="profile">
+        <div class="profile-container">
         <img src="./delish profile.jpg" alt="Profile Picture">
+    </div>
         <div class="myname">
        <h3>Hey Im</h3> <h2>DelishKumar</h2>
     </div>
         <p><span>MERN Stack Developer</span> | Passionate about building scalable applications</p>
     </section>
-    <section id="about">
+    <section id="about" class="about">
         <h2>About Me</h2>
         <p>Enthusiastic and detail-oriented MERN Stack Developer with a strong foundation in MongoDB, Express.js, React.js, and Node.js. Passionate about building responsive and user-friendly web applications. Proficient in HTML, CSS, JavaScript, and modern frontend frameworks, with experience in developing full-stack projects, integrating APIs, and optimizing performance. A quick learner with strong problem-solving skills, eager to apply knowledge in a dynamic development environment. Seeking an opportunity to leverage technical skills and contribute to innovative web solutions.
 
             Strong understanding of state management, component-based architecture, and database design. Familiar with version control systems like Git/GitHub and agile development methodologies. Experienced in working on real-world projects like TripAdvisor, Meesho, and Udemy clones. Passionate about UI/UX design, performance optimization, and scalability. Committed to continuous learning and staying updated with the latest web technologies.</p>
-            <div class="about__me">
+        </section>
             <div class="about__myskil">
-                <h4>My Skil</h4>
-                <div class="skils"><p>HTML</p>
-                    <p>CSS</p>
-                    <p>Javascript</p>
-                    <p>Node.js</p>
-                    <p>React.js</p>
-                    <p>MongoDB</p>
+                <h2>My Skil</h2>
+                <div class="skils">
+                    <div class="skil-logo"><img src="./skillogo/html.jpg"><p>HTML</p></div>
+                    <div class="skil-logo"><img src="./skillogo/css.jpg"><p>CSS</p></div>
+                    <div class="skil-logo"><img src="./skillogo/js.jpg"><p>Javascript</p></div>
+                    <div class="skil-logo"><img src="skillogo/reactjs.jpg"><p>React.js</p></div>
+                    <div class="skil-logo"><img src="skillogo/nodejs.jpg"><p>Node.js</p></div>
+                    <div class="skil-logo"><img src="skillogo/mongodb.jpg"><p>MongoDB</p></div>
+                    <div class="skil-logo"><img src="skillogo/git.jpg"><p>Git</p></div>
                     
                 </div>
             </div>
-            <div class="about__hobby">
-                <h4>Hobby</h4>
-                <div>
-                    <h5>cricket</h5>
-                    <h5>Fishing</h5>
-                </div>
-            </div>
-        </div>
-    </section>
+            
+        
+    
 
     <section class="education">
         <div class="myeducation">
             <h2>EDUCATION</h2>
-            <ul>
-                <li>B.A - Sociology, Tamilnadu open university, (2021 to 2024)</li>
-                <li>Diploma - EEE , GVT,college,madurai,(2016 to 2018)</li>
-                <li>12th - Computer science, Ilayangudi HRSEC school , (2015to 2016)</li>
-                <li>10th- ilayangudi HRSEC school,(2013 to 2014)</li>
+            <ul class="education-lists">
+                <li>⭐ B.A - Sociology, Tamilnadu open university, (2021 to 2024)</li>
+                <li>⭐ Diploma - EEE , GVT,college,madurai,(2016 to 2018)</li>
+                <li>⭐ 12th - Computer science, Ilayangudi HRSEC school , (2015to 2016)</li>
+                <li>⭐ 10th- ilayangudi HRSEC school,(2013 to 2014)</li>
             </ul>
         </div>
         <div class="myCERTIFICATE">
             <h2>CERTIFICATE</h2>
-            <ul>
-                <li> DCA - Diploma computer Application (CSC) </li>
-                <li>Mern Stack development (EMC)</li>
+            <ul class="cerficate-lists">
+                <li>⭐  DCA - Diploma computer Application (CSC) </li>
+                <li>⭐ Mern Stack development (EMC)</li>
 
             </ul>
         </div>
     </section>
-    <section id="projects">
+    <section id="projects" class="project-head">
         <h2>Projects</h2>
+        <div class="project-card">
         <div class="project">
             <h3>TripAdvisor Clone</h3>
+            <img src="tripadvise.png">
             <p>A travel review platform built using the MERN stack.</p>
-            <a href="https://delishkumar.github.io/tripadviser-project/">Live Website</a>
+            <a href="https://delishkumar.github.io/tripadviser-project/"><button class="button-33" role="button">Live Website</button></a>
         </div>
         <div class="project">
             <h3>Meesho Clone</h3>
+            <img src="meesho.png">
             <p>An e-commerce website developed using HTML, CSS, and JavaScript.</p>
-            <a href="https://delishkumar.github.io/meeshoclone/">Live Website</a>
-        </div>
-        <div class="project">
-            <h3>Udemy Clone</h3>
-            <p>A learning platform built using React.js, Node.js, and MongoDB.</p>
-            <a href="https://udamy-clone-sigma.vercel.app/">Live Website</a>
-        </div>
-        <div class="project">
-            <h3>Dogs Gallery</h3>
-            <p>A React.js project showcasing images of different dog breeds.</p>
-            <a href="http://dogs-gallery-react-pi.vercel.app">Live Website</a>
+            <a href="https://delishkumar.github.io/meeshoclone/"><button class="button-33" role="button">Live Website</button></a>
         </div>
         <div class="project">
             <h3>Nostra Project</h3>
+            <img src="nostra.png">
             <p>An advanced web application developed with the MERN stack.</p>
-            <a href="#">Live Website</a>
+            <a href=" https://delishkumar.github.io/Nostra-e-com/"><button class="button-33" role="button">Live Website</button></a>
         </div>
+        <div class="project">
+            <h3>Udemy Clone</h3>
+            <img src="udamy.png">
+            <p>A learning platform built using React.js, Node.js, and MongoDB.</p>
+            <a href="https://udamy-clone-sigma.vercel.app/"><button class="button-33" role="button">Live Website</button></a>
+        </div>
+        <div class="project">
+            <h3>Weather App</h3>
+            <img src="weather.png">
+            <p>Built a responsive Weather App using React.js, integrating a third-party API to display real-time temperature, humidity, and wind speed.</p>
+            <a href="https://weatherapp-omega-sandy.vercel.app/"><button class="button-33" role="button">Live Website</button></a>
+        </div>
+    </div>
     </section>
-    <section id="contact">
+    <section id="contact" class="contact">
         <h2>Contact</h2>
-        <p>Email: deliskumar800@gmail.com</p>
+        <p><i class="fa-regular fa-envelope"></i> Email : deliskumar800@gmail.com</p>
+        <p><i class="fa-solid fa-phone-volume"></i> phone : +919942228330</p>
         <div class="sm">
         <a href="https://www.linkedin.com/in/delish05/"><i class="fa-brands fa-linkedin" ></i></a>
         <a href="https://github.com/Delishkumar"><i class="fa-brands fa-github"></i></a>
     </div>
-    <div class="cv">
-        <h5><a href="./Delish Resume.pdf" download="./DelishKumar Resume.pdf">Download CV</a></h5>
-    </div>
-    </section>
-    <footer>
-        <p>&copy; 2025 Delish Kumar. All rights reserved.</p>
-    </footer>
-    <script src="./index.js"></script>
-</body>
-</html>
+  
+
+
+<div>
+    <a class="button-73" href="./Delish Resume.pdf" download="Delish Resume.pdf">Download CV</a>   
+</div>
+<div class="footer-bottom">
+    &copy; 2025 Delish Kumar | All Rights Reserved
+  </div>
+       <script src="index.js"></script>
+        
+    
